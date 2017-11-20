@@ -8,7 +8,6 @@ module.exports = app => {
             scope: ['profile', 'email']
         })
     )
-
     // google api callback
     app.get('/auth/google/callback', passport.authenticate('google'))
 }
