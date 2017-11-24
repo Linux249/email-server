@@ -1,7 +1,7 @@
 const mongoose = require('mongoose')
 const { Schema } = mongoose
 
-conster userSchema = new Schema({
+const userSchema = new Schema({
     googleID: String,
     name: String
 
