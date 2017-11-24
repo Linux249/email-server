@@ -1,5 +1,7 @@
 const express = require('express')
 const mongoose = require('mongoose')
+// import order (mongoose first) important!)
+require('./model/User')   // if loaded here its usable over mongoose import (testing should be bedder this way)
 require('./src/services/passport')
 const keys = require('config/keys')
 
