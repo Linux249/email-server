@@ -1,8 +1,9 @@
 const express = require('express')
 const mongoose = require('mongoose')
 require('./src/services/passport')
+const keys = require('config/keys')
 
-mongoose.connect(mongodb://@ds121336.mlab.com:21336/email-server)
+mongoose.connect(keys.mongoURI)
 
 const app = express()
 
