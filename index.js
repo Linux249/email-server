@@ -1,6 +1,8 @@
 const express = require('express')
-
+const mongoose = require('mongoose')
 require('./src/services/passport')
+
+mongoose.connect(mongodb://@ds121336.mlab.com:21336/email-server)
 
 const app = express()
 
